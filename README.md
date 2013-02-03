@@ -28,5 +28,5 @@ Usage
 -----
 
 * http://127.0.0.1:3000/list -- list of stories
-* http://127.0.0.1:3000/<name> -- the story "Name"
-* http://127.0.0.1:3000/<name>?fb2=true -- the story "Name" plus generating fb2-version of story
+* http://127.0.0.1:3000/name -- the story "Name"
+* http://127.0.0.1:3000/name?fb2=true -- the story "Name" plus generating fb2-version of story
