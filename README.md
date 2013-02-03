@@ -23,3 +23,10 @@ Then point your browser to:
 * http://127.0.0.1:3000/ -- view result (bemjson + bemhtml)
 * http://127.0.0.1:3000/?__mode=bemjson -- view bemjson (json + priv)
 * http://127.0.0.1:3000/?__mode=json -- view data json
+
+Usage
+-----
+
+* http://127.0.0.1:3000/list -- list of stories
+* http://127.0.0.1:3000/<name> -- the story "Name"
+* http://127.0.0.1:3000/<name>?fb2=true -- the story "Name" plus generating fb2-version of story
