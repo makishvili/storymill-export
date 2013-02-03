@@ -3,6 +3,7 @@ bemhtml
 deploy
 node_modules
 .bem/cache
+.idea
 desktop.bundles/*/*.*
 !desktop.bundles/*/*.bemjson.js
 !desktop.bundles/*/*.blocks.js
