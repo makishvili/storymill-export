@@ -3,10 +3,14 @@ blocks['b-page'].title = function() {
 };
 
 blocks['b-page'].content = function(data) {
-    console.log(JSON.stringify(data));
-
     return {
         block   : 'b-stories',
-        content : 'Hello list'
+        content : data.map(function(para){
+            return {
+                elem: 'para',
+                elemMods: {'type': para.tag},
+                content: para.text
+            }
+        })
     };
 };
