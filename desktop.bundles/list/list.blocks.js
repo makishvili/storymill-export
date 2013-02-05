@@ -1,5 +1,3 @@
-var jspath = require('jspath');
-
 module.exports = {
     call : {
         'stories' : {
