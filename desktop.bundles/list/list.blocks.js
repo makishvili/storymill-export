@@ -6,7 +6,8 @@ module.exports = {
             call: 'includes/stories.js',
             params: {
                 filePath: '/Users/makishvili/projects/storymill-export/desktop.bundles/list/king.html'
-            }
+            },
+            pointer: '.children[1].children'
         }
     },
 
@@ -16,17 +17,12 @@ module.exports = {
 };
 
 function getStoryJSON(stories) {
-    var text = [];
-
-    if (stories && !stories.error) {
-        var paragraphs = jspath.apply('.children[1].children', stories[0]);
-        text = paragraphs.map(function(para) {
+    return stories ?
+        stories.map(function(para) {
             return {
                 tag : para.attribs.class,
                 text: para.children[0].data
             };
-        })
-    }
-
-    return text;
+        }) :
+        [];
 }
