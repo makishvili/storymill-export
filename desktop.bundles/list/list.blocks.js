@@ -5,7 +5,7 @@ module.exports = {
             params: {
                 filePath: '/Users/makishvili/projects/storymill-export/desktop.bundles/list/king.html'
             },
-            pointer: '.children[1].children'
+            pointer: '.[0].children[1].children'
         }
     },
 
