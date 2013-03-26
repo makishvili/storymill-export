@@ -7,4 +7,5 @@ node_modules
 desktop.bundles/*/*.*
 !desktop.bundles/*/*.bemjson.js
 !desktop.bundles/*/*.blocks.js
+!desktop.bundles/*/*.html
 !desktop.bundles/.bem/*
