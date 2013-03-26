@@ -11,7 +11,7 @@
         "inherit"      : "1.0.4",
         "express"      : "3.0.4",
         "winston"      : "0.6.2",
-        "jaggi"        : "0.1.2",
+        "jaggi"        : "0.1.6",
         "vow"          : "0.1.5",
         "jspath"       : "0.2.9",
         "htmlparser"   : "",

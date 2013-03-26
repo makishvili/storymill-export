@@ -1,16 +1,33 @@
+/*
+    file
+    1. загрузить rawHtml
+
+    includes/stories.js
+    1. rawHtml to validHtml
+    3. validHtml to rawJson
+
+*/
 module.exports = {
     call : {
-        'stories' : {
-            call: 'includes/stories.js',
+        'getHtml' : {
+            call: 'file',
             params: {
-                filePath: '/Users/makishvili/projects/storymill-export/desktop.bundles/list/king.html'
+                path: '/Users/makishvili/projects/storymill-export/desktop.bundles/list/king.html',
+                toState : { rawHtml : '.[0]' }
+            }
+        },
+        'html2json' : {
+            deps: 'getHtml',
+            guard: 'rawHtml',
+            params : function(ctx) {
+                return { rawHtml : ctx.state('rawHtml') };
             },
-            pointer: '.[0].children[1].children'
+            call: 'includes/html2json.js'
         }
     },
 
     done : function(res, _, promise) {
-        promise.fulfill(getStoryJSON(res.stories));
+        promise.fulfill(getStoryJSON(res.html2json));
     }
 };
 
