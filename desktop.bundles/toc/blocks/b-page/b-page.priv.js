@@ -9,8 +9,8 @@ blocks['b-page'].content = function(data) {
             elem: 'item',
             content: {
                 block: 'b-link',
-                url: dir,
-                content: dir
+                url: dir.name,
+                content: dir.title
             }
         };
     });
