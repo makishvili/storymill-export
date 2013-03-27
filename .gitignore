@@ -2,8 +2,8 @@ bem-bl
 bemhtml
 deploy
 text
-node_modules
-!node_modules/storymill
+node_modules/*/
+!node_modules/storymill/
 .bem/cache
 .idea
 desktop.bundles/*/*.*
