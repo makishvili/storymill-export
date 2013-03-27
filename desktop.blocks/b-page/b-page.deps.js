@@ -8,7 +8,8 @@
         { block: 'bemhtml' }
     ],
     shouldDeps : [
-        'i-global'
+        'i-global',
+        'b-link'
     ],
     noDeps: [
         {

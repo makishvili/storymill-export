@@ -1,10 +1,13 @@
 bem-bl
 bemhtml
 deploy
+text
 node_modules
+!node_modules/storymill
 .bem/cache
 .idea
 desktop.bundles/*/*.*
+desktop.bundles/*/_.*
 !desktop.bundles/*/*.bemjson.js
 !desktop.bundles/*/*.blocks.js
 !desktop.bundles/*/*.html
