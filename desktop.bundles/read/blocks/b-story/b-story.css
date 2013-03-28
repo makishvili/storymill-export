@@ -1,0 +1,36 @@
+.b-story
+{
+    font-size: 23px;
+    line-height:  2rem;
+
+    width: 750px;
+
+    margin:  0 auto;
+    padding:  0 1.5em 1.5em;
+}
+
+.b-story__item_type_p4
+{
+    margin-bottom: 0.7em;
+
+    text-indent: 2em;
+}
+
+.b-story__item_type_p1,
+.b-story__item_type_p2,
+.b-story__item_type_p3
+{
+    text-align: center;
+}
+
+.b-story__item_type_p1
+{
+    font-size:  160%;
+}
+
+.b-story__item_type_p3
+{
+    font-size:  140%;
+    margin-top:  2em;
+    margin-bottom: 1em;
+}

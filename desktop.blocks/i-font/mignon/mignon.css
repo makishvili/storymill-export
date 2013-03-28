@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: 'mignon-bold';
+    src: url('mignon-bold.eot');
+    src: url('mignon-bold.eot?#iefix') format('embedded-opentype'),
+         url('mignon-bold.woff') format('woff'),
+         url('mignon-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mignon-it';
+    src: url('mignon-it.eot');
+    src: url('mignon-it.eot?#iefix') format('embedded-opentype'),
+         url('mignon-it.woff') format('woff'),
+         url('mignon-it.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'mignon-medium';
+    src: url('mignon-medium.eot');
+    src: url('mignon-medium.eot?#iefix') format('embedded-opentype'),
+         url('mignon-medium.woff') format('woff'),
+         url('mignon-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mignon-mediumit';
+    src: url('mignon-mediumit.eot');
+    src: url('mignon-mediumit.eot?#iefix') format('embedded-opentype'),
+         url('mignon-mediumit.woff') format('woff'),
+         url('mignon-mediumit.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'mignon-regular';
+    src: url('mignon-regular.eot');
+    src: url('mignon-regular.eot?#iefix') format('embedded-opentype'),
+         url('mignon-regular.woff') format('woff'),
+         url('mignon-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mignon-semiboldit';
+    src: url('mignon-semiboldit.eot');
+    src: url('mignon-semiboldit.eot?#iefix') format('embedded-opentype'),
+         url('mignon-semiboldit.woff') format('woff'),
+         url('mignon-semiboldit.ttf') format('truetype');
+    font-weight: bold;
+}

@@ -3,7 +3,12 @@ blocks['b-page'].title = function() {
 };
 
 blocks['b-page'].content = function(data) {
-    return {
-        content: 'Один текст'
-    }
+    var chapters = data.story.filter(function(para){
+        return para.tag === 'p3'
+    });
+
+    return [
+        blocks['b-toc'](chapters),
+        blocks['b-story'](data.story)
+    ]
 };

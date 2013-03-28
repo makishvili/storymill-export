@@ -1,13 +1,18 @@
-var toc = require('storymill/toc');
+var storymill = require('storymill/storymill');
 
 module.exports = {
     call : {
-        'list' : {
-            params: {
-                textsFolder: '/Users/makishvili/projects/storymill-export/text'
+        'story' : {
+            params : function(ctx) {
+                var query = ctx.request().query.name;
+                var filePath = '/Users/makishvili/projects/storymill-export/text/' + query + '/' + query + '.sm.html';
+
+                return {
+                    path: filePath
+                };
             },
             call: function(params, promise) {
-                promise.fulfill(toc.getTocList(params));
+                promise.fulfill(storymill.getStoryJson(params.path));
             }
         }
     }
