@@ -10,7 +10,7 @@ MAKE.decl('Arch', {
     bundlesLevelsRegexp: /^.+?\.bundles$/,
 
     getLibraries: function() {
-        return {
+        var libs = {
             'bem-bl': {
                 type: 'git',
                 url: 'git://github.com/bem/bem-bl.git',
@@ -21,6 +21,14 @@ MAKE.decl('Arch', {
                 url: 'git://github.com/bem/bemhtml.git'
             }
         };
+        var fs = require('fs');
+        var libIsMissed = function(paths) {
+           return paths.filter(function (path) {
+               return !fs.existsSync(path);
+           }).length !== 0;
+        };
+
+        return this.opts.force === true || libIsMissed(Object.keys(libs)) ? libs : {};
     }
 });
 

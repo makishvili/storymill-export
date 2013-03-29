@@ -4,3 +4,8 @@
 
     text-decoration: none;
 }
+
+.b-link:hover
+{
+    text-decoration: underline;
+}

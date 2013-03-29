@@ -15,12 +15,14 @@
 
     min-width: 900px;
     margin: 0;
-    padding: 2em;
+    padding: 0 2em 2em;
 
     background: #fbfaf4;
 
     text-shadow: 0 1px #fff;
 }
+
+/**:target { background-color: red }*/
 
 ::selection
 {

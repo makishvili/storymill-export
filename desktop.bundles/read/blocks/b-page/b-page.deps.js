@@ -1,6 +1,7 @@
 ({
     shouldDeps : [
         'b-story',
-        'b-toc'
+        'b-toc',
+        'b-ui'
     ]
 })
