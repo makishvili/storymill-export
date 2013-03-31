@@ -1,0 +1,30 @@
+.b-stories
+{
+    font-size:  120%;
+
+    margin:  2em;
+    line-height:  2rem;
+}
+
+.b-stories__title
+{
+    margin-top:  3em;
+}
+
+.b-stories__link
+{
+    position: relative;
+}
+
+.b-stories__link:before
+{
+    content: "•";
+
+    position: absolute;
+    top:  0.2em;
+    left:  -0.7rem;
+
+    display: block;
+
+    font: 0.9em/1 Arial, sans-serif;
+}
