@@ -1,4 +1,4 @@
-var toc = require('storymill/toc');
+var toc = require('storymill/list');
 
 module.exports = {
     call : {
@@ -7,7 +7,7 @@ module.exports = {
                 textsFolder: '/Users/makishvili/projects/storymill-export/text'
             },
             call: function(params, promise) {
-                promise.fulfill(toc.getTocList(params));
+                promise.fulfill(toc.getBookList(params));
             }
         }
     }
