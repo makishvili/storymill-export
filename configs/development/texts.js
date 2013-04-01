@@ -5,6 +5,7 @@ module.exports = {
         'cold',
         'dog',
         'kush',
-        'signs'
+        'signs',
+         'vagon'
     ]
 };
