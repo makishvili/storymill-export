@@ -1,7 +1,7 @@
 var jspath = require('jspath');
 
 blocks['b-page'].title = function() {
-    return 'Список текстов';
+    return 'Мои книги';
 };
 
 blocks['b-page'].content = function(data) {
@@ -20,7 +20,7 @@ blocks['b-page'].content = function(data) {
                         content: {
                             block: 'b-link',
                             mix: [{block: 'b-stories', elem: 'link'}],
-                            url: 'read/?name=' +dir.name,
+                            url: 'book/?id=' +dir.name,
                             content: dir.title
                         }
                     };
@@ -37,7 +37,7 @@ blocks['b-page'].content = function(data) {
                         content: {
                             block: 'b-link',
                             mix: [{block: 'b-stories', elem: 'link'}],
-                            url: 'read/?name=' +dir.name,
+                            url: 'book/?id=' +dir.name,
                             content: dir.title
                         }
                     };

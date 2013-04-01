@@ -23,7 +23,7 @@
     -o-transform: translate(-295px,0);
     -moz-transform: translate(-295px,0);
 
-    background: transparent url(/desktop.bundles/read/blocks/b-ui/b-ui.png) 100% 0 repeat-y;
+    background: transparent url(/desktop.bundles/book/blocks/b-ui/b-ui.png) 100% 0 repeat-y;
 }
 
 .b-ui:hover .b-ui__toolbar

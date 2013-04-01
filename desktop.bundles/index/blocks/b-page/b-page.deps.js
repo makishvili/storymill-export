@@ -1,3 +1,0 @@
-({
-    shouldDeps : 'b-trends-rotator'
-})

@@ -1,5 +1,5 @@
 blocks['b-page'].title = function() {
-    return 'Один текст';
+    return 'Книга';
 };
 
 blocks['b-page'].content = function(data) {
@@ -29,7 +29,7 @@ blocks['b-page'].content = function(data) {
                             {block: 'b-ui', elem: 'bottom'},
                             {block: 'b-ui', elem: 'link'}
                         ],
-                        url: '/toc',
+                        url: '/',
                         content: 'Читать другие тексты'
                     },
                 ]
