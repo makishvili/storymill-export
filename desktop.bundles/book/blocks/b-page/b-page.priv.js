@@ -3,8 +3,10 @@ blocks['b-page'].title = function() {
 };
 
 blocks['b-page'].content = function(data) {
-    var chapters = data.story.filter(function(para){
-        return para.tag === 'p3'
+    var story = data.story;
+
+    var chapters = story.body.filter(function(para){
+        return para.tag === 'p1'
     });
 
     return [
@@ -19,7 +21,7 @@ blocks['b-page'].content = function(data) {
                             {block: 'b-ui', elem: 'top'},
                             {block: 'b-ui', elem: 'link'}
                         ],
-                        url: '#para-0',
+                        url: '#title',
                         content: 'В начало'
                     },
                     blocks['b-toc'](chapters),
@@ -35,6 +37,6 @@ blocks['b-page'].content = function(data) {
                 ]
             }
         },
-        blocks['b-story'](data.story)
+        blocks['b-story'](story)
     ]
 };

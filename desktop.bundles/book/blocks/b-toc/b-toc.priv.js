@@ -6,7 +6,7 @@ blocks['b-toc'] = function(chapters) {
             content: {
                 block: 'b-link',
                 mix: [{block: 'b-toc', elem: 'link'}],
-                url: '#para-' + chapter.id,
+                url: '#p' + chapter.id,
                 content: chapter.text
             }
         }

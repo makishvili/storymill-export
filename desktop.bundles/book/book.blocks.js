@@ -9,11 +9,12 @@ module.exports = {
                 var filePath = textsCfg.dir + query + '/' + query + '.sm.html';
 
                 return {
+                    dir: query,
                     path: filePath
                 };
             },
             call: function(params, promise) {
-                promise.fulfill(storymill.getStoryJson(params.path));
+                promise.fulfill(storymill.getStoryJson(params));
             }
         }
     }
