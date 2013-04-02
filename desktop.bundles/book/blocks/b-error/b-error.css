@@ -1,0 +1,8 @@
+.b-error
+{
+    position: fixed;
+    top:  0;
+    left:  200px;
+
+    width:  300px;
+}

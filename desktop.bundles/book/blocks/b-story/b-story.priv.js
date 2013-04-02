@@ -1,8 +1,8 @@
 blocks['b-story'] = function(story) {
-    var error = false;
+    var error = [];
 
-    var getElem = function(tag) {
-        switch (tag) {
+    var getElem = function(para) {
+        switch (para.tag) {
             case 'p1':
                 return 'chapter';
                 break;
@@ -10,33 +10,49 @@ blocks['b-story'] = function(story) {
                 return 'text';
                 break;
             default:
-                error = true;
+                error.push(para.id);
                 return 'error';
                 break;
         }
     }
 
-    return {
-        block: 'b-story',
-        mods: {error: error},
-        content: [
-            {
-                elem: 'title',
-                attrs: {id: 'title'},
-                content: story.title
-            },
-            {
-                elem: 'author',
-                attrs: {id: 'author'},
-                content: story.author
-            },
-            story.body.map(function(para){
+    // Здесь, а не по месту, чтобы создавался error
+    var elems = story.body.map(function(para){
+        return {
+            elem: getElem(para),
+            attrs: {id: 'p' + para.id},
+            content: para.text
+        }
+    })
+
+
+    return [
+        {
+            block: 'b-error',
+            content: error.map(function(errorId){
                 return {
-                    elem: getElem(para.tag),
-                    attrs: {id: 'p' + para.id},
-                    content: para.text
+                    block: 'b-link',
+                    url: '#p' + errorId,
+                    content: '#p' + errorId + ', '
                 }
             })
-        ]
-    };
+        },
+        {
+            block: 'b-story',
+            mods: {error: (error.length !== 0) ? 'true' : 'false'},
+            content: [
+                {
+                    elem: 'title',
+                    attrs: {id: 'title'},
+                    content: story.title
+                },
+                {
+                    elem: 'author',
+                    attrs: {id: 'author'},
+                    content: story.author
+                },
+                elems
+            ]
+        }
+    ];
 };

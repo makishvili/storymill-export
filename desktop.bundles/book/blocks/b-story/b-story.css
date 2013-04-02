@@ -52,5 +52,8 @@
 {
     font-weight: bold;
 
-    color:  red;
+    width:  100%;
+    min-height: 10px;
+
+    border: 1px solid red;
 }
