@@ -27,7 +27,7 @@ blocks['b-story'] = function(story) {
 
 
     return [
-        {
+        (error.length !== 0) && {
             block: 'b-error',
             content: error.map(function(errorId){
                 return {
