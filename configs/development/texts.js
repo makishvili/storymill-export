@@ -41,14 +41,28 @@ module.exports = {
             id: 'lift',
             title: 'Лифт',
             completed: 'no'
+        },
+        {
+            id: 'mall',
+            title: 'Стрельба в Европейском',
+            completed: 'no'
+        },
+        {
+            id: 'crocodile',
+            title: 'Крокодил',
+            completed: 'no'
+        },
+        {
+            id: 'water',
+            title: 'Достать воды',
+            completed: 'no'
+        },
+/*
+        {
+            id: 'grape',
+            title: 'Виноград в бокале',
+            completed: 'yes'
         }
-    ],
-    completed: [
-        'childhood',
-        'cold',
-        'dog',
-        'kush',
-        'signs',
-        'vagon'
+*/
     ]
 };
