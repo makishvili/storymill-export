@@ -1,6 +1,6 @@
 module.exports = {
     author : 'Вадим Макишвили',
-    dir : '/Users/makishvili/projects/storymill-export/text/',
+    dir : '/Users/makishvili/Dropbox/StoryMill/text/',
     bookList: [
         {
             id: 'childhood',
