@@ -7,21 +7,20 @@ module.exports = {
     port : 3001,
 
     getPageAsset : function(pagePath, techName) {
-        var promise = Vow.promise(),
-            params = {
-                host : 'localhost',
-                port : this.port,
-                path : '/' + pagePath + '/' + path.basename(pagePath) + '.' + techName + '.js'
-            },
-            request = http.request(
-                params,
-                function(res) {
-                    res.once('end', function() {
-                        var modulePath = path.join('..', '..', pagePath, path.basename(pagePath) + '.' + techName + '.' + 'js');
-                        delete require.cache[path.resolve(__dirname, modulePath)];
-                        return promise.fulfill(require(modulePath));
-                    });
-                });
+        var promise = Vow.promise();
+        var params = {
+            host : 'localhost',
+            port : this.port,
+            path : '/' + pagePath + '/' + path.basename(pagePath) + '.' + techName + '.js'
+        };
+
+        var request = http.request(params, function (res) {
+            res.once('end', function() {
+                var modulePath = path.join('..', '..', pagePath, path.basename(pagePath) + '.' + techName + '.' + 'js');
+                delete require.cache[path.resolve(__dirname, modulePath)];
+                return promise.fulfill(require(modulePath));
+            });
+        });
 
         request
             .once('error', function(e) {
