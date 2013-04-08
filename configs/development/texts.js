@@ -1,5 +1,11 @@
 module.exports = {
-    author : 'Вадим Макишвили',
+    author : {
+        nickName: 'makishvili',
+        shortName: 'Вадим Макишвили',
+        firstName: 'Вадим',
+        middleName: 'Юрьевич',
+        lastName: 'Макишвили'
+    },
     dir : '/Users/makishvili/Dropbox/StoryMill/text/',
     bookList: [
         {

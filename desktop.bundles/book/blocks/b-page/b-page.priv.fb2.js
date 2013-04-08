@@ -1,43 +1,81 @@
-blocks['b-page'] = function(data) {
-    var globalParams = blocks['i-global'].params();
+var textsCfg = require('storymill/config').get('texts');
+
+blocks['b-page'].description = function(story) {
+    var hashMd5 = '112132132';
+
     return {
-        block : 'b-page',
-        title : blocks['b-page'].title(data),
-        favicon : '/favicon.ico',
-        mix : [blocks['i-global']()],
-        head : [
-            { elem : 'css', url : globalParams.assetsPath + '.css', ie : false },
-            { block : 'i-jquery', elem : 'core' },
-            { elem : 'js', url : globalParams.assetsPath + '.js' },
-            { elem : 'meta', attrs : { name : 'description', content : '' }},
-            { elem : 'meta', attrs : { name : 'keywords', content : '' }}
-        ],
-        content : blocks['b-page'].content(data)
-    };
-};
-
-blocks['b-page'].title = blocks['b-page'].content = function() {};
-
-blocks['b-page'].title = function() {
-    return 'Книга';
-};
-
-blocks['b-page'].content = function(data) {
-    var story = data.story;
-
-    var chapters = story.body.filter(function(para){
-        return para.tag === 'p1'
-    });
-
-    return [
-        {
-            block: 'b-ui',
-            content: {
-                elem: 'toolbar',
+        tag: 'description',
+        content: [
+            {
+                tag: 'title-info',
                 content: [
-                    blocks['b-toc'](chapters),
+                    {
+                        tag: 'genre',
+                        content: 'prose_contemporary'
+                    },
+                    {
+                        tag: 'author',
+                        content: [
+                            {
+                                tag: 'first-name',
+                                content: textsCfg.author.firstName
+                            },
+                            {
+                                tag: 'middle-name',
+                                content: textsCfg.author.middleName
+                            },
+                            {
+                                tag: 'last-name',
+                                content: textsCfg.author.lastName
+                            }
+                        ]
+                    },
+                    {
+                        tag: 'book-title',
+                        content: story.title
+                    },
+                    {
+                        tag: 'lang',
+                        content: 'ru'
+                    }
+                ]
+            },
+            {
+                tag: 'document-info',
+                content: [
+                    {
+                        tag: 'author',
+                        content: [
+                            {
+                                tag: 'nickname',
+                                content: textsCfg.author.nickName
+                            },
+                            {
+                                tag: 'date',
+                                attrs: {value: ''},
+                                content: ''
+                            },
+                            {
+                                tag: 'id',
+                                content: 'makishvili_' + story.id + '_' + hashMd5
+                            },
+                            {
+                                tag: 'version',
+                                content: '0.1'
+                            }
+                        ]
+                    },
                 ]
             }
+        ]
+    }
+};
+
+blocks['b-page'].body = function(story) {
+    return [
+        {
+            tag: 'body',
+            content: blocks['b-story'](story)
         }
     ]
 };
