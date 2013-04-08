@@ -1,5 +1,14 @@
 var textsCfg = require('storymill/config').get('texts');
 
+blocks['b-page'].styles = function() {
+    var styles = {
+        tag: 'stylesheet',
+        attrs: {type: 'text/css'},
+        content: '.body{font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;} .p{margin:0.5em 0 0 0.3em; padding:0.2em; text-align:justify;}'
+    }
+
+    return styles;
+}
 blocks['b-page'].description = function(story) {
     var hashMd5 = '112132132';
 
