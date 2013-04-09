@@ -1,0 +1,25 @@
+.b-export
+{
+    position: absolute;
+    top: 4em;
+    left: 1em;
+}
+
+.b-export__link
+{
+    color: #09a2ee;
+
+    line-height:  1.6em;
+
+    text-decoration: underline;
+    text-shadow: none !important;
+}
+
+.b-export__text
+{
+    color: #fbfaf4;
+
+    line-height:  1.6em;
+
+    text-shadow: none !important;
+}

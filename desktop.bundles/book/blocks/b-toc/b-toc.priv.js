@@ -15,6 +15,12 @@ blocks['b-toc'] = function(chapters) {
     return {
         block: 'b-toc',
         js: true,
-        content: chapters
+        content: [
+            {
+                elem: 'title',
+                content: 'Оглавление'
+            },
+            chapters
+        ]
     };
 };

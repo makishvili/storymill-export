@@ -24,6 +24,7 @@ blocks['b-page'].content = function(data) {
                         url: '#title',
                         content: 'В начало'
                     },
+                    blocks['b-export'](story),
                     blocks['b-toc'](chapters),
                     {
                         block: 'b-link',

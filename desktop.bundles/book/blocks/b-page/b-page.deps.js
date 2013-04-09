@@ -6,6 +6,7 @@
         'b-story',
         'b-toc',
         'b-ui',
-        'b-error'
+        'b-error',
+        'b-export'
     ]
 })
