@@ -7,13 +7,14 @@ blocks['b-page'].title = function() {
 blocks['b-page'].content = function(data) {
     var completed = jspath.apply('.{.completed === "yes"}', data.list);
     var uncompleted = jspath.apply('.{.completed === "no"}', data.list);
+    var published = jspath.apply('.{.published === "yes"}', data.list);
 
     return [
         {
             block: 'b-menu',
             mix: [{block: 'b-stories'}],
             content:[
-                completed.map(function(dir){
+                published.map(function(dir){
                     return {
                         block: 'b-menu',
                         elem: 'item',
@@ -25,6 +26,7 @@ blocks['b-page'].content = function(data) {
                         }
                     };
                 }),
+/*
                 {
                     elem: 'title',
                     mix: [{block: 'b-stories', elem: 'title'}],
@@ -42,6 +44,7 @@ blocks['b-page'].content = function(data) {
                         }
                     };
                 })
+*/
             ]
         }
     ]

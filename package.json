@@ -15,7 +15,7 @@
         "vow"          : "0.1.5",
         "jspath"       : "0.2.9",
         "htmlparser"   : "",
-        "highlight.js" : ""
+        "highlight.js" : "",
     },
     "devDependencies" : {
         "bem" : "0.5.22"

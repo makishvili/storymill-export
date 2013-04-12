@@ -11,57 +11,68 @@ module.exports = {
         {
             id: 'childhood',
             title: 'Последний вечер детства',
-            completed: 'yes'
+            completed: 'yes',
+            published: 'no'
         },
         {
             id: 'cold',
             title: 'Холодно',
-            completed: 'yes'
+            completed: 'yes',
+            published: 'yes'
         },
         {
             id: 'dog',
             title: 'Убей собаку!',
-            completed: 'yes'
+            completed: 'yes',
+            published: 'no'
         },
         {
             id: 'kush',
             title: 'Сандалики на тонком ремешке',
-            completed: 'yes'
+            completed: 'yes',
+            published: 'yes'
         },
         {
             id: 'signs',
             title: 'Знаки',
-            completed: 'yes'
+            completed: 'yes',
+            published: 'yes'
         },
         {
-            id: 'vagon',
+            id: 'cry',
             title: 'Время, когда плакать можно',
-            completed: 'yes'
+            completed: 'yes',
+            published: 'yes'
         },
         {
             id: 'in-the-car',
             title: 'Ребенок в машине',
-            completed: 'no'
+            completed: 'no',
+            published: 'no'
         },
         {
             id: 'lift',
             title: 'Лифт',
-            completed: 'no'
+            completed: 'no',
+            published: 'no'
         },
         {
             id: 'mall',
             title: 'Стрельба в Европейском',
-            completed: 'no'
+            completed: 'no',
+            published: 'no'
         },
         {
             id: 'crocodile',
             title: 'Крокодил',
-            completed: 'no'
+            completed: 'no',
+            published: 'no'
         },
         {
             id: 'water',
             title: 'Достать воды',
-            completed: 'no'
+            completed: 'no',
+            published: 'no'
         },
 /*
         {

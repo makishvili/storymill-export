@@ -15,7 +15,7 @@ blocks['b-export'] = function(story) {
                         mix: [
                             {block: 'b-export', elem: 'link'}
                         ],
-                        url: 'http://www.bookmate.ru/upload?link=' + story.id + '.fb2',
+                        url: 'http://www.bookmate.ru/upload?link=http://makishvili.com/proza/' + story.id + '.fb2',
                         content: 'bookmate.ru'
                     },
                 ]
@@ -34,6 +34,18 @@ blocks['b-export'] = function(story) {
                         ],
                         url: story.id + '.fb2',
                         content: 'fb2'
+                    },
+                    {
+                        elem: 'text',
+                        content: ', '
+                    },
+                    {
+                        block: 'b-link',
+                        mix: [
+                            {block: 'b-export', elem: 'link'}
+                        ],
+                        url: 'http://pdfcrowd.com/url_to_pdf/?width=210mm&height=297mm&use_print_media=1&footer_text=%p%20of%20%n',
+                        content: 'pdf'
                     },
                 ]
             }

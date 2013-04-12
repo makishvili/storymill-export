@@ -10,6 +10,21 @@
     width: 100px;
     height: 100%;
 }
+@media print
+{
+    .b-page
+    {
+        padding-top: 2em;
+
+        background:  none;
+        text-shadow: none;
+    }
+    .b-ui
+    {
+        display: none;
+    }
+}
+
 
 .b-ui__toolbar
 {
