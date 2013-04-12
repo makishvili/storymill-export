@@ -4,7 +4,7 @@ deploy
 text
 node_modules/*/
 !node_modules/storymill/
-!node_modules/node.pdf/
+!node_modules/pdf/
 .bem/cache
 .idea
 desktop.bundles/*/*.*
