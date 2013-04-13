@@ -1,0 +1,3 @@
+block b-story {
+    elem chapter, tag: 'h2'
+}

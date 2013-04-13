@@ -1,4 +1,4 @@
-var textsCfg = require('storymill/config').get('texts');
+var smCfg = require('storymill/config').get('storymill');
 
 blocks['b-page'].styles = function() {
     var styles = {
@@ -27,15 +27,15 @@ blocks['b-page'].description = function(story) {
                         content: [
                             {
                                 tag: 'first-name',
-                                content: textsCfg.author.firstName
+                                content: smCfg.author.firstName
                             },
                             {
                                 tag: 'middle-name',
-                                content: textsCfg.author.middleName
+                                content: smCfg.author.middleName
                             },
                             {
                                 tag: 'last-name',
-                                content: textsCfg.author.lastName
+                                content: smCfg.author.lastName
                             }
                         ]
                     },
@@ -57,7 +57,7 @@ blocks['b-page'].description = function(story) {
                         content: [
                             {
                                 tag: 'nickname',
-                                content: textsCfg.author.nickName
+                                content: smCfg.author.nickName
                             },
                             {
                                 tag: 'date',

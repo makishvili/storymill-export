@@ -7,6 +7,11 @@ module.exports = {
         lastName: 'Макишвили'
     },
     dir : '/Users/makishvili/Dropbox/StoryMill/text/',
+    path : {
+        project: '/Users/makishvili/projects/storymill-export/',
+        import: '/Users/makishvili/Dropbox/StoryMill/import/',
+        export: '/Users/makishvili/Dropbox/StoryMill/export/'
+    },
     bookList: [
         {
             id: 'childhood',

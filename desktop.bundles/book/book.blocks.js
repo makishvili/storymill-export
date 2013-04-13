@@ -1,12 +1,12 @@
 var storymill = require('storymill/storymill');
-var textsCfg = require('storymill/config').get('texts');
+var smCfg = require('storymill/config').get('storymill');
 
 module.exports = {
     call : {
         'story' : {
             params : function(ctx) {
                 var query = ctx.request().query.id;
-                var filePath = textsCfg.dir + query + '/' + query + '.sm.html';
+                var filePath = smCfg.dir + query + '/' + query + '.sm.html';
 
                 return {
                     dir: query,

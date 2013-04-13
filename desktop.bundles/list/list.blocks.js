@@ -1,11 +1,11 @@
 var toc = require('storymill/list');
-var textsCfg = require('storymill/config').get('texts');
+var smCfg = require('storymill/config').get('storymill');
 
 module.exports = {
     call : {
         'list' : {
             params: {
-                textsFolder: textsCfg.dir
+                textsFolder: smCfg.dir
             },
             call: function(params, promise) {
                 promise.fulfill(toc.getBookList(params));

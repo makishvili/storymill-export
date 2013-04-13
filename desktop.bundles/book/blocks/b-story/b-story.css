@@ -17,6 +17,7 @@
 .b-story__author,
 .b-story__chapter
 {
+    font-weight: normal;
     text-align: center;
 }
 
