@@ -5,7 +5,7 @@ module.exports = {
     call : {
         'list' : {
             params: {
-                textsFolder: smCfg.dir
+                textsFolder: smCfg.path.import
             },
             call: function(params, promise) {
                 promise.fulfill(toc.getBookList(params));

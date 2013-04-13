@@ -6,7 +6,7 @@ module.exports = {
         'story' : {
             params : function(ctx) {
                 var query = ctx.request().query.id;
-                var filePath = smCfg.dir + query + '/' + query + '.sm.html';
+                var filePath = smCfg.path.import + query + '/' + query + '.sm.html';
 
                 return {
                     dir: query,

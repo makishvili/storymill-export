@@ -29,7 +29,7 @@ module.exports = {
             id: 'dog',
             title: 'Убей собаку!',
             completed: 'yes',
-            published: 'no'
+            published: 'yes'
         },
         {
             id: 'kush',
