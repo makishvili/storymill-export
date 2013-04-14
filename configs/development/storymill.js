@@ -26,12 +26,6 @@ module.exports = {
             published: 'yes'
         },
         {
-            id: 'dog',
-            title: 'Убей собаку!',
-            completed: 'yes',
-            published: 'yes'
-        },
-        {
             id: 'kush',
             title: 'Сандалики на тонком ремешке',
             completed: 'yes',
@@ -46,6 +40,12 @@ module.exports = {
         {
             id: 'cry',
             title: 'Время, когда плакать можно',
+            completed: 'yes',
+            published: 'yes'
+        },
+        {
+            id: 'dog',
+            title: 'Убей собаку!',
             completed: 'yes',
             published: 'yes'
         },

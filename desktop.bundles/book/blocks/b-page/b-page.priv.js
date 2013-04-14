@@ -26,6 +26,7 @@ blocks['b-page'].content = function(data) {
                     },
                     blocks['b-export'](story),
                     blocks['b-toc'](chapters),
+/*
                     {
                         block: 'b-link',
                         mix: [
@@ -35,6 +36,7 @@ blocks['b-page'].content = function(data) {
                         url: 'list.html',
                         content: 'Читать другие тексты'
                     },
+*/
                 ]
             }
         },
