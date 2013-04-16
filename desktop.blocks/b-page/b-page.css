@@ -1,31 +1,34 @@
-@font-face {
-    font-family: 'mignon-regular';
-    src: url('/desktop.blocks/i-font/mignon/mignon-regular.eot');
-    src: url('/desktop.blocks/i-font/mignon/mignon-regular.eot?#iefix') format('embedded-opentype'),
-         url('/desktop.blocks/i-font/mignon/mignon-regular.woff') format('woff'),
-         url('/desktop.blocks/i-font/mignon/mignon-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.b-page
+@media screen
 {
-    font-family: Georgia, 'mignon-regular', serif;
-    font-size: 100%;
+    @font-face {
+        font-family: 'mignon-regular';
+        src: url('/desktop.blocks/i-font/mignon/mignon-regular.eot');
+        src: url('/desktop.blocks/i-font/mignon/mignon-regular.eot?#iefix') format('embedded-opentype'),
+             url('/desktop.blocks/i-font/mignon/mignon-regular.woff') format('woff'),
+             url('/desktop.blocks/i-font/mignon/mignon-regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
-    min-width: 900px;
-    margin: 0;
-    padding: 0 2em 2em;
+    .b-page
+    {
+        font-family: Georgia, 'mignon-regular', serif;
+        font-size: 100%;
 
-    background: #fbfaf4;
+        min-width: 900px;
+        margin: 0;
+        padding: 0 2em 2em;
 
-    text-shadow: 0 1px #fff;
-}
+        background: #fbfaf4;
 
-/**:target { background-color: red }*/
+        text-shadow: 0 1px #fff;
+    }
 
-::selection
-{
-    text-shadow: none !important;
-    background: #b1d2fb;
+    /**:target { background-color: red }*/
+
+    ::selection
+    {
+        text-shadow: none !important;
+        background: #b1d2fb;
+    }
 }

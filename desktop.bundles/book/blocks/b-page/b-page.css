@@ -1,0 +1,11 @@
+@media print
+{
+    .b-page
+    {
+        /*font-family: "Times", serif;*/
+        padding-top: 2em;
+
+        background:  none;
+        text-shadow: none;
+    }
+}
