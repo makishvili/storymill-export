@@ -12,11 +12,11 @@ module.exports = {
         export: '/Users/makishvili/YandexMakishviliDisk/sm-export/'
     },
     pdfPrinter: {
-        default: 'apachefop', // 'wkhtmltopdf'
+        default: 'apachefop',
+//        default: 'wkhtmltopdf',
+
         apachefop: {
-            conf: '/Applications/Apache\\ FOP/fop-1.1/fop.xconf',
-            params: {
-            }
+            conf: '/Applications/Apache\\ FOP/fop-1.1/fop.xconf'
         },
         wkhtmltopdf: {
             params: {
