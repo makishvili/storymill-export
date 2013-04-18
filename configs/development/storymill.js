@@ -6,19 +6,20 @@ module.exports = {
         middleName: 'Юрьевич',
         lastName: 'Макишвили'
     },
-    path : {
-        project: '/Users/makishvili/projects/storymill-export/',
-        import: '/Users/makishvili/Dropbox/StoryMill/import/',
-        export: '/Users/makishvili/YandexMakishviliDisk/StoryMill/'
+    project : {
+        root: '/Users/makishvili/projects/storymill-export/',
+        import: '/Users/makishvili/Dropbox/StoryMill/sm-import/',
+        export: '/Users/makishvili/YandexMakishviliDisk/sm-export/'
     },
     pdfPrinter: {
-//        default: 'apacheFop',
-        default: 'wkhtmltopdf',
-        params: {
-            'apacheFop' : {
-
-            },
-            'wkhtmltopdf' : {
+        default: 'apachefop', // 'wkhtmltopdf'
+        apachefop: {
+            conf: '/Applications/Apache\\ FOP/fop-1.1/fop.xconf',
+            params: {
+            }
+        },
+        wkhtmltopdf: {
+            params: {
                 global: {
                     '--print-media-type': '',
                     '--header-font-name': 'Times',
