@@ -9,7 +9,7 @@ module.exports = {
     path : {
         project: '/Users/makishvili/projects/storymill-export/',
         import: '/Users/makishvili/Dropbox/StoryMill/import/',
-        export: '/Users/makishvili/Dropbox/StoryMill/export/'
+        export: '/Users/makishvili/YandexMakishviliDisk/StoryMill/'
     },
     pdfPrinter: {
 //        default: 'apacheFop',
