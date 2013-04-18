@@ -6,11 +6,35 @@ module.exports = {
         middleName: 'Юрьевич',
         lastName: 'Макишвили'
     },
-    dir : '/Users/makishvili/Dropbox/StoryMill/text/',
     path : {
         project: '/Users/makishvili/projects/storymill-export/',
         import: '/Users/makishvili/Dropbox/StoryMill/import/',
         export: '/Users/makishvili/Dropbox/StoryMill/export/'
+    },
+    pdfPrinter: {
+//        default: 'apacheFop',
+        default: 'wkhtmltopdf',
+        params: {
+            'apacheFop' : {
+
+            },
+            'wkhtmltopdf' : {
+                global: {
+                    '--print-media-type': '',
+                    '--header-font-name': 'Times',
+                    '--footer-font-name': 'Times',
+                    '--header-font-size': '8',
+                    '--footer-font-size': '8',
+                    '--header-spacing': '4',
+                    '--footer-spacing': '4',
+                    '--footer-center': '[page]/[toPage]',
+                    '--header-right': 'makishvili.com/proza/%fileName%.html',
+                },
+                toc: {
+                    '--xsl-style-sheet': '%projectPath%node_modules/storymill/wkhtmltopdf.toc.xsl'
+                }
+            }
+        }
     },
     bookList: [
         {
