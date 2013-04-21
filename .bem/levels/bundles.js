@@ -15,6 +15,7 @@ exports.getTechs = function() {
         'deps.js'       : 'deps.js',
         'priv.js'       : pjoin(PRJ_TECHS, 'priv.js'),
         'priv.fb2.js'   : pjoin(PRJ_TECHS, 'priv.fb2.js'),
+        'priv.fo.js'   : pjoin(PRJ_TECHS, 'priv.fo.js'),
         'js'            : 'js-i',
         'css'           : 'css',
         'bemhtml'       : pjoin(PRJ_ROOT, 'bemhtml/.bem/techs/bemhtml.js')
