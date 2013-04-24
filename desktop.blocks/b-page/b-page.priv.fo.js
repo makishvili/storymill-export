@@ -10,10 +10,11 @@ blocks['b-page'] = function(data) {
             attrs: { 'xmlns:fo': 'http://www.w3.org/1999/XSL/Format' },
             content : [
                 blocks['b-page']['layout-master-set'](),
-                blocks['b-page']['page-sequence'](story)
+
+                blocks['b-page']['page-sequence'].cover(story),
+                blocks['b-page']['page-sequence'].chapters(story)
             ]
         }
     ];
 };
 
-blocks['b-page']['layout-master-set'] = blocks['b-page']['page-sequence'] = blocks['b-page']['page-sequence-master'] = function() {};

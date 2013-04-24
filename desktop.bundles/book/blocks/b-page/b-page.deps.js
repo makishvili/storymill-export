@@ -8,6 +8,15 @@
         'b-toc',
         'b-ui',
         'b-error',
-        'b-export'
+        'b-export',
+        {
+            block: 'b-page',
+            elems: [
+                'layout-master-set',
+                'page-master',
+                'page-sequence-master',
+                'page-sequence'
+            ]
+        }
     ]
 })

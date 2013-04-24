@@ -8,8 +8,8 @@ module.exports = {
     },
     project : {
         root: '/Users/makishvili/projects/storymill-export/',
-        import: '/Users/makishvili/Dropbox/StoryMill/sm-import/',
-        export: '/Users/makishvili/YandexMakishviliDisk/sm-export/'
+        import: '/Users/makishvili/Yandex.Disk/StoryMill/sm-import/',
+        export: '/Users/makishvili/Yandex.Disk/StoryMill/sm-export/'
     },
     pdfPrinter: {
         default: 'apachefop',
