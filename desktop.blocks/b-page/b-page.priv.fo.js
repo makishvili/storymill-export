@@ -18,3 +18,7 @@ blocks['b-page'] = function(data) {
     ];
 };
 
+blocks['b-page']['layout-master-set'] = function() {};
+blocks['b-page']['page-sequence'] = function() {};
+blocks['b-page']['page-sequence'].cover = function() {};
+blocks['b-page']['page-sequence'].chapters = function() {};

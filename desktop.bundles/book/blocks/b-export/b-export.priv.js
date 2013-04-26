@@ -44,8 +44,8 @@ blocks['b-export'] = function(story) {
                         mix: [
                             {block: 'b-export', elem: 'link'}
                         ],
-//                        url: story.id + '.pdf',
-                        url: 'http://pdfcrowd.com/url_to_pdf/?width=210mm&height=297mm&use_print_media=1&footer_text=%p%20of%20%n',
+                        url: story.id + '.pdf',
+//                        url: 'http://pdfcrowd.com/url_to_pdf/?width=210mm&height=297mm&use_print_media=1&footer_text=%p%20of%20%n',
                         content: 'pdf'
                     },
                 ]
