@@ -9,8 +9,10 @@ var getPageParams = function(side) {
 
         'margin-top': '0.5cm',
         'margin-bottom': '0.5cm',
-        'margin-left': side === 'rightPage'? '2cm' : '1cm',
-        'margin-right': side === 'rightPage'? '1cm' : '2cm'
+        'margin-left': '1.5cm',
+        'margin-right': '1.5cm'
+//        'margin-left': side === 'rightPage'? '2cm' : '1cm',
+//        'margin-right': side === 'rightPage'? '1cm' : '2cm'
     }
 }
 
