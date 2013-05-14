@@ -1,8 +1,8 @@
 {
-    "author" : "Dmitry Filatov <dfilatov@yandex-team.ru>",
+    "author" : "Vadim Makishvili <makishvili@yandex.ru>",
     "name" : "storymill-export",
     "description" : "Tool for exporting storymill documents for html/bf2",
-    "version" : "0.0.3",
+    "version" : "0.0.1",
     "engines" : {
         "node" : "0.8.x",
         "npm"  : "1.1.65"
@@ -18,9 +18,6 @@
         "htmlparser"   : "",
         "highlight.js" : "",
         "enb"          : ">=0.7.23"
-    },
-    "devDependencies" : {
-        "bem" : "0.5.22"
     },
     "private" : true
 }
