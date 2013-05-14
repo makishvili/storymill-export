@@ -1,3 +1,5 @@
+var blocks = module.exports;
+
 blocks['b-page'] = function(data) {
     var story = data.story;
 

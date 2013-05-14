@@ -13,9 +13,11 @@
         "winston"      : "0.6.2",
         "jaggi"        : "0.1.6",
         "vow"          : "0.1.5",
+        "vow-fs"       : ">=0.1.11",
         "jspath"       : "0.2.9",
         "htmlparser"   : "",
-        "highlight.js" : ""
+        "highlight.js" : "",
+        "enb"          : ">=0.7.23"
     },
     "devDependencies" : {
         "bem" : "0.5.22"

@@ -1,6 +1,7 @@
 NODE_MODULES := ./node_modules/
 
 BEM := $(NODE_MODULES).bin/bem
+ENB := $(NODE_MODULES).bin/enb
 NPM := npm
 
 GITHUB_REPO := git@github.com:dfilatov/twitter-trends.git
@@ -13,6 +14,10 @@ endif
 .PHONY: bem-server
 bem-server:: $(BEM)
 	@$(BEM) server --port 3001
+
+.PHONY: enb-server
+enb-server:: $(ENB)
+	@$(ENB) server --port 3001 --host localhost
 
 $(BEM):: $(NODE_MODULES)
 
