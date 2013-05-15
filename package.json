@@ -17,7 +17,9 @@
         "jspath"       : "0.2.9",
         "htmlparser"   : "",
         "highlight.js" : "",
-        "enb"          : ">=0.7.23"
+        "enb"          : ">=0.7.23",
+        "enb-bemhtml"  : "",
+        "bh"           : ""
     },
     "private" : true
 }

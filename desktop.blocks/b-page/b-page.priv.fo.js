@@ -5,7 +5,7 @@ blocks['b-page'] = function(data) {
 
     return [
         {
-            block: 'xml-prolog'
+            block: 'b-xmlprolog'
         },
         {
             tag : 'fo:root',

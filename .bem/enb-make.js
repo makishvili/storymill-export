@@ -27,11 +27,11 @@ module.exports = function(config) {
             require("enb/techs/deps-old"),
             require("enb/techs/files"),
             [ require("enb/techs/file-provider"), { target: "?.bemjson.js" } ],
-            require("enb/techs/bemhtml"),
             require("enb/techs/html-from-bemjson"),
             require("enb/techs/js"),
             require("enb/techs/priv-js"),
             require("enb/techs/css"),
+            require("bh/techs/bh-server"),
 
             [ require("enb/techs/file-copy"), { sourceTarget: "?.js", destTarget: "_?.js" } ],
             [ require("enb/techs/file-copy"), { sourceTarget: "?.priv.js", destTarget: "_?.priv.js" } ],
@@ -51,7 +51,7 @@ module.exports = function(config) {
     function getLevels() {
         return [
             {"path":"bem-bl/blocks-common","check":false},
-            {"path":"bem-bl/blocks-desktop","check":false},
+            {"path":"bem-bl/blocks-desktop","check":true},
             {"path":"desktop.blocks","check":true}
         ].map(function(l) { return config.resolvePath(l); });
     }
