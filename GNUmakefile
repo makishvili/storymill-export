@@ -22,6 +22,11 @@ app-dev:
 app:
 	node boot.js
 
+.PHONY: git-submodules
+git-submodules:
+	@git submodule sync
+	@git submodule update --init
+
 .PHONY: clean
 clean::
 	$(BEM) make -m clean

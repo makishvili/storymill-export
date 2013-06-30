@@ -1,3 +1,0 @@
-block b-export {
-    elem text, tag: 'span'
-}
